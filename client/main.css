@@ -1,0 +1,172 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: url("healthcare-medical-background-with-hexagonal-geometric-shapes_1017-11948.jpg") no-repeat scroll;
+  background-size: cover;
+
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  color:white;
+}
+p {
+  text-align: center;
+}
+.container {
+
+  max-width: 800px;
+  min-width: 500px;
+  min-height: 550px;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-top: 30px solid #3c4f65;
+  border-bottom: 30px solid #3c4f65;
+  border-right: 30px solid #3c4f65;
+  border-left: 30px solid #3c4f65;
+  border-radius: 0px;
+  background-color: #33313b;
+}
+#login-buttons {
+  text-align: center;
+  margin-top: 40;
+  margin-bottom: 70;
+  padding-bottom: 10px;
+  display: block;
+}
+header {
+
+  padding: 20px 5px 15px 15px;
+
+  position: relative;
+
+}
+h1 {
+  font-size: 1.5em;
+  margin: 0;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.occupancy {
+  font-size: 1.0em;
+  margin: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 18px;
+}
+.occupancy input[type=submit]{
+  background-color: white;
+  border: none;
+  width: 50%;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 8px;
+  display: block;
+  color: black;
+  margin-top: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+.occupancy input[type=text]{
+  margin-top: 5px;
+  margin-bottom: 0px;
+  display: inline-block;
+  border: 0px;
+  text-align: center;
+  text-decoration: none;
+}
+.doctor {
+  font-size: 1.0em;
+  margin: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 18px;
+}
+.doctor input[type=submit]{
+  background-color: white;
+  border: none;
+  width: 50%;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 8px;
+  display: block;
+  color: black;
+  margin-top: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+.doctor input[type=text]{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+  border: 0px;
+  text-align: center;
+  text-decoration: none;
+}
+table {
+  margin-top: 10px;
+  border-collapse: separate;
+  width: 75%;
+  margin-left:auto;
+  margin-right:auto;
+  overflow-y:scroll;
+}
+
+td {
+  border: 0px;
+  text-align: center;
+  padding: 4px;
+}
+th {
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 4px;
+}
+.topnav {
+  overflow: hidden;
+  width: 100%;
+  background-color: inherit;
+}
+.topnav button.active{
+  background-color: white;
+  float: left;
+  border: none;
+  width: 50%;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+.topnav button.inactive{
+  background-color: inherit;
+  float: left;
+  border: none;
+  width: 50%;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  display: block;
+  color: white;
+  text-align: center;
+}
+.topnav button:hover {
+  color: gray;
+}

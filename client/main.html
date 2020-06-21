@@ -1,0 +1,65 @@
+<head>
+  <title>hospital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+      <header>
+        <h1>Hospital Dashboard</h1>
+      </header>
+
+      {{> loginButtons}}
+      {{#if currentUser}}
+      <div class="topnav">
+        {{#if retNav}}
+          <button type="button" name="forms" class = "inactive">Forms</button>
+          <button type="button" name="doctors" class = "active">Doctors</button>
+        {{else}}
+          <button type="button" name="forms" class = "active">Forms</button>
+          <button type="button" name="doctors" class = "inactive">Doctors</button>
+        {{/if}}
+      </div>
+      {{#if retNav}}
+      <table class="list">
+        <tr>
+          <th>Doctor</th>
+          <th>Insurance Providers</th>
+          <th>Specialization</th>
+        </tr>
+        {{#each setDoctors}}
+        <tr>
+          <td>{{this.doctor}}</td>
+          <td>{{this.insurance}}</td>
+          <td>{{this.special}}</td>
+        </tr>
+        {{/each}}
+      </table>
+
+
+      {{else}}
+      <form class="occupancy">
+        <label for="capacity">Enter current empty beds:</label><br>
+        <input type="text" id="capacity" name="cap" ><br>
+        <input type="submit" value="Submit">
+      </form>
+
+      <form class="doctor">
+        <label for="capacity">Enter doctor name:</label><br>
+        <input type="text" id="doctor"><br>
+        <label for="capacity">Enter doctor's specialization:</label><br>
+        <input type="text" id="special"><br>
+        <label for="capacity">Enter doctor's accepted insurance providers, separated by commas:</label><br>
+        <input type="text" id="insurance"><br>
+        <input type="submit" value="Submit">
+      </form>
+      {{/if}}
+      {{else}}
+      <p>Welcome to the Hospital Dashboard. To get started, log in or make an account. Make sure to use your hospital's Medicare Provider ID as your username.</p>
+      {{/if}}
+    </div>
+  </body>
+
+  <template name="task">
+    <li>{{text}}</li>
+  </template>
